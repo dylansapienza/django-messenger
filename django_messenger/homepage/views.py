@@ -1,4 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def home(request): 
-    return HttpResponse("Github is forever and poop")
+
+def home(request):
+    return render(request, 'homepage/home.html')
